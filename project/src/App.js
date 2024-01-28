@@ -30,6 +30,7 @@ import EditMovieForm from './EditMovieForm';
 import Login from './Login';
 import BasicForm from './BasicForm';
 import DeleteMovieForm from './DeleteMovieForm';
+import { Taskone } from './Taskone';
 // import { Global } from './Global.js';
 
 
@@ -82,6 +83,7 @@ import DeleteMovieForm from './DeleteMovieForm';
             <Route path='/color-game' element={<Addcolor/>} />
             <Route path='/basic-form' element={<BasicForm/>} />
             {/* <Route path='/basic-form' element={<BasicForm/>} /> */}
+            <Route path='taskone' element={<Taskone/>}/>
 
             <Route path='/movies/:id' element={<MovieDetails   /> }/>
             <Route path='*' element={<Notfound/>} />

@@ -31,7 +31,7 @@ console.log(id);
   console.log(editMovie);
   const getEditMovieDetail = ()=>{
     // fetch(`https://64d0e744ff953154bb79af35.mockapi.io/Movies/${id}`,
-    fetch(`http://localhost:5000/movies/getmoviebyid/${id}`,
+    fetch(`${API}/movies/getmoviebyid/${id}`,
 
     { method:"GET"}).then((res)=>res.json())
     .then((detail)=>{console.log(detail)

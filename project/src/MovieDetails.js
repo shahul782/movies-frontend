@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 // import { Initialmovielist } from './Initialmovielist';
 import Button from '@mui/material/Button';
+import { API } from './global';
 
 
 export function MovieDetails() {
@@ -12,7 +13,7 @@ export function MovieDetails() {
   const [movie,setmovie]=useState({})
   useEffect(()=>{
     // fetch(`https://64d0e744ff953154bb79af35.mockapi.io/Movies/${id}`,)
-    fetch(`http://localhost:5000/movies/getmoviebyid/${id}`)
+    fetch(`${API}/movies/getmoviebyid/${id}`)
     .then((data)=>data.json())
     .then((Mv)=>{
       console.log(Mv);

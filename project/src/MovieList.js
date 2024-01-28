@@ -17,7 +17,8 @@ function MovieList() {
       method: "GET",
     })
       .then((data) => data.json())
-      .then((Mv) => setMovieList(Mv));
+      .then((Mv) => {setMovieList(Mv)
+      console.log(Mv)});
   };
 
   //  const Movielist=Initialmovielist;
